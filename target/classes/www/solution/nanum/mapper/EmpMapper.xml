@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="www.solution.nanum.mapper.EmpMapper">
+  
+	
+	<!-- 사원 등록 수행 -->
+	<insert id="insertEmp">
+		INSERT 
+			INTO employee
+			VALUES (
+					(SELECT CONCAT('NM', NVL(SUBSTR(MAX(emp_number),3),1000) + 1)
+						FROM employee),
+					#{emp_name},
+					#{emp_idnumber1} || '-' || #{emp_idnumber2}
+					)
+	</insert>
+  
+  
+  	<!-- 사원 조회 수행 -->
+	<select id="selectEmpList" resultType="www.solution.nanum.vo.EmpVO">
+		SELECT *
+			FROM EMPLOYEE
+			WHERE
+				emp_idnumber = #{emp_idnumber1 } || '-' || #{emp_idnumber2 }
+	</select>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</mapper>
