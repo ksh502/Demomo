@@ -13,7 +13,7 @@
 		<jsp:include page="../inc/header.jsp"></jsp:include>
 	</header>
 	
-	<h2>사원 등록</h2>
+	<h2>사원 등록 폼폼폼</h2>
 	<form action="empRegist" method="post" name="registForm">
 		<table border="1">
 			<tr>
