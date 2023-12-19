@@ -21,7 +21,7 @@
 				<td><input type="text" name="emp_name" id="emp_name" required="required"></td>
 			</tr>
 			<tr>
-				<td>주민등록번호</td>
+				<td>주민등록번호호호호</td>
 				<td>
 					<input type="text" name="emp_idnumber1" id="emp_idnumber1" required="required">
 					-

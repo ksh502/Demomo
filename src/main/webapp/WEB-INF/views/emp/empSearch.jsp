@@ -22,7 +22,7 @@
 				<td>주민등록번호</td>
 				<td>
 					<input type="text" name="emp_idnumber1" id="emp_idnumber1" required="required">
-					-
+					-ㅎㅎㅎ
 					<input type="text" name="emp_idnumber2" id="emp_idnumber2" required="required">
 				</td>
 			</tr>
